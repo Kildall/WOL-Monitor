@@ -40,14 +40,14 @@ The minimum packet size is 102 bytes, but packets can be larger and the magic pa
 The project includes a PyInstaller spec file for creating a standalone executable:
 
 ```bash
-pyinstaller wol_monitor.spec
+pyinstaller --onefile --windowed --name "WOL Monitor" --icon=NONE wol_monitor.py
 ```
 
 The executable will be created in the `dist/` folder.
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.11+
 - tkinter (usually included with Python)
 - PyInstaller (for building standalone executable)
 
